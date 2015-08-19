@@ -1,0 +1,134 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.azolla.w</groupId>
+		<artifactId>org.azolla.w</artifactId>
+		<version>1.1.0</version>
+		<relativePath>../org.azolla.w</relativePath>
+	</parent>
+
+	<artifactId>org.azolla.w.leon</artifactId>
+	<packaging>jar</packaging>
+	<name>Azolla.org Web Base Library</name>
+	<description>Azolla.org Web Base Library</description>
+	<url>https://github.com/Azollas/org.azolla.w.leon</url>
+	<inceptionYear>2015</inceptionYear>
+	<organization>
+		<name>Azollas</name>
+		<url>https://github.com/Azollas</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>The Azolla.org Web-based is released under version 2.0 of the Apache License.</comments>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>Azolla</id>
+			<name>ShaneKing</name>
+			<email>github@azolla.org</email>
+			<url>https://github.com/Azolla</url>
+			<organization>Azollas</organization>
+			<organizationUrl>https://github.com/Azollas</organizationUrl>
+			<roles>
+				<role>Project Manager</role>
+				<role>Architect</role>
+			</roles>
+			<timezone>+8</timezone>
+			<properties>
+				<dept>No</dept>
+			</properties>
+		</developer>
+		<developer>
+			<id>iShaneKing</id>
+			<name>iShaneKing</name>
+			<email>git@azolla.org</email>
+			<url>https://github.com/iShaneKing</url>
+			<organization>Azollas</organization>
+			<organizationUrl>https://github.com/Azollas</organizationUrl>
+			<roles>
+				<role>Team Leader</role>
+			</roles>
+			<timezone>+8</timezone>
+			<properties>
+				<dept>No</dept>
+			</properties>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Azolla</name>
+			<email>github@azolla.org</email>
+			<url>https://github.com/Azolla</url>
+			<organization>Azollas</organization>
+			<organizationUrl>https://github.com/Azollas</organizationUrl>
+			<roles>
+				<role>Project Manager</role>
+				<role>Architect</role>
+			</roles>
+			<timezone>+8</timezone>
+			<properties>
+				<dept>No</dept>
+			</properties>
+		</contributor>
+	</contributors>
+	<scm>
+		<connection>scm:git:git@github.com:Azollas/org.azolla.w.leon.git</connection>
+		<developerConnection>scm:git:git@github.com:Azollas/org.azolla.w.leon.git</developerConnection>
+		<url>git@github.com:Azollas/org.azolla.w.leon.git</url>
+	</scm>
+	<issueManagement>
+		<system>Github</system>
+		<url>https://github.com/Azollas/org.azolla.w.leon/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Travis-CI</system>
+		<url>https://travis-ci.org/Azollas/org.azolla.w.leon</url>
+	</ciManagement>
+
+	<dependencies>
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.azolla.l</groupId>
+            <artifactId>org.azolla.l.ling</artifactId>
+        </dependency>
+	</dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
