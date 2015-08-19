@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.azolla.w</groupId>
 		<artifactId>org.azolla.w</artifactId>
-		<version>1.1.0</version>
+		<version>2.0.0</version>
 		<relativePath>../org.azolla.w</relativePath>
 	</parent>
 
