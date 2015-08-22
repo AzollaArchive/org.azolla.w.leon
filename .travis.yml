@@ -1,0 +1,13 @@
+language: java
+sudo: false # faster builds
+
+jdk:
+  - oraclejdk8
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+env:
+  global:
+    - secure: UIWu+2TFFmcrA7WGZPaDqfc0ElfA9j7ZwTSv95QnOAJs4JKHnjZH3jMAJAZiNDxrfHvA4g36h9YC92GWUNFaZ07pePlPbYg9JT7pxZ9qpMsQrFp4tOJ1+Fxy0IxBUdcuBTUd7t8ouprS99HDmt5+Kw04v/FOvrVgPmex2P5mfSE=
+    - secure: E22O3s+DVbq9itFc1rUT4zSJG/NWnPpqC5Qu7OBCDVoKO0qYXgrUgbxY8UEppJMFJJXb6+VUlZLAqAHT3jHKmYSCAkTIBVh+6uyNMROPM80El9MutfrymmDNR7DOPrqCgNLc9qQL9W9mxh/rw3cPqf9NRhIrne5Ipam+GYscS0U=
