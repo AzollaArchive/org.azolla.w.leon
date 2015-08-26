@@ -57,7 +57,7 @@ public class PropCfg implements WebCfg
         catch (Exception e)
         {
             Log0.error(this.getClass(), e.toString(), e);
-            throw new RuntimeException("Can't find {" + key + "} !");
+            throw new RuntimeException("Can't find {" + key + "}.");
         }
     }
 
@@ -89,7 +89,7 @@ public class PropCfg implements WebCfg
         catch (Exception e)
         {
             Log0.error(PropCfg.class, KV.ins("fileName", fileName).toString(), e);
-            throw new RuntimeException("Can't find {" + fileName + "} !");
+            throw new RuntimeException("Can't find {" + fileName + "}.");
         }
         cfgCacheBuilder.cleanUp();
     }

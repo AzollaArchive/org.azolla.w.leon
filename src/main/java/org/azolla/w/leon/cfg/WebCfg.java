@@ -26,7 +26,7 @@ public interface WebCfg
             List<File> rtnList = File0.allFile(getWebINF(), (File pathname) -> pathname.getName().matches(REGULAR_CFG_FILENAME) && key.equals(pathname.getName()));
             if (rtnList.size() > 1)
             {
-                throw new Exception("Get more then one file with {" + key + "} error !");
+                throw new Exception("Get more then one file with {" + key + "} error.");
             }
             else
             {
@@ -40,7 +40,7 @@ public interface WebCfg
         String thisClassPath = WebCfg.class.getProtectionDomain().getCodeSource().getLocation().getPath();
         if (thisClassPath.indexOf("WEB-INF") <= 0)
         {
-            throw new RuntimeException("Get web root path error !");
+            throw new RuntimeException("Get web root path error.");
         }
         return File0.newFile(thisClassPath.substring(0, thisClassPath.indexOf("WEB-INF") + 8));
     }
