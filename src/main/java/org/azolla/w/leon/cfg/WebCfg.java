@@ -17,7 +17,8 @@ import java.util.List;
  */
 public interface WebCfg
 {
-    String                     REGULAR_CFG_FILENAME = "^(.)*\\.Azolla.Cfg\\.(properties|xml)$";
+    //String                     REGULAR_CFG_FILENAME = "^(.)*\\.Azolla.Cfg\\.(properties|xml)$";
+    String                     REGULAR_CFG_FILENAME = "^(.)*\\.Azolla\\.(properties|xml)$";
     LoadingCache<String, File> cfgFileCacheBuilder  = CacheBuilder.newBuilder().build(new CacheLoader<String, File>()
     {
         @Override

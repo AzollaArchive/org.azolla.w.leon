@@ -1,4 +1,25 @@
+# system
+.DS_Store
+
+# ide eclipse
+.settings
+.project
+.classpath
+*_mvn_deploy.launch
+
+# ide idea
+.idea
+*.iml
+
+# mvn
+target
+
+# java
 *.class
+
+# cfg
+*.Cfg.Azolla.properties
+*.Cfg.Azolla.xml
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

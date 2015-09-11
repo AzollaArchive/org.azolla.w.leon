@@ -63,7 +63,7 @@ public enum Oss
                 }
             };
 
-    private static final String ALI_OSS_CFG_FILENAME = "alioss.w.Azolla.Cfg.properties";
+    private static final String ALI_OSS_CFG_FILENAME = "alioss.w.Cfg.Azolla.properties";
 
     private static final String OSS_ALI_ACCESS_KEY_ID     = "OSS_ALI_ACCESS_KEY_ID";
     private static final String OSS_ALI_ACCESS_KEY_SECRET = "OSS_ALI_ACCESS_KEY_SECRET";
