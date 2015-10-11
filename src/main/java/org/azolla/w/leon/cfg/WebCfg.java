@@ -22,12 +22,12 @@ public interface WebCfg
     LoadingCache<String, File> cfgFileCacheBuilder  = CacheBuilder.newBuilder().build(new CacheLoader<String, File>()
     {
         @Override
-        public File load(@Nonnull String key) throws Exception
+        public File load(@Nonnull String cfgFilename) throws Exception
         {
-            List<File> rtnList = File0.allFile(getWebINF(), (File pathname) -> pathname.getName().matches(REGULAR_CFG_FILENAME) && key.equals(pathname.getName()));
+            List<File> rtnList = File0.allFile(getWebINF(), (File pathname) -> pathname.getName().matches(REGULAR_CFG_FILENAME) && cfgFilename.equals(pathname.getName()));
             if (rtnList.size() > 1)
             {
-                throw new Exception("Get more then one file with {" + key + "} error.");
+                throw new Exception("Get more then one file with {" + cfgFilename + "} error.");
             }
             else
             {
@@ -46,9 +46,9 @@ public interface WebCfg
         return File0.newFile(thisClassPath.substring(0, thisClassPath.indexOf("WEB-INF") + 8));
     }
 
-    default void refresh(String key)
+    default void refresh(String cfgFilename)
     {
-        cfgFileCacheBuilder.refresh(key);
+        cfgFileCacheBuilder.refresh(cfgFilename);
     }
 
     public void refresh();
