@@ -28,10 +28,9 @@
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="module" module-name="org.azolla.l.ling" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.7" level="project" />
     <orderEntry type="library" name="Maven: com.belerweb:pinyin4j:2.5.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.4" level="project" />
     <orderEntry type="library" name="Maven: com.google.zxing:core:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.zxing:javase:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: commons-net:commons-net:3.3" level="project" />
